@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Naperville Area Pediatricians - Children&#39;s Health Partners</title>
+    <meta property="og:title" content="Naperville Area Pediatricians - Children&#39;s Health Partners" />
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="/js/app.js"></script>
+	<script>LOADER.include('/templates/head.html');</script>
+  </head>
+  <body>
+    <div class="body-bg">
+		<script>LOADER.include('/templates/header.html');</script>
+		<div class="container">
+    		<section>
+	    		<div class="header-content">
+					<img src="/img/header_image_4.jpg" alt="">
+	    		</div>
+			</section>
+			<section>
+				<h3>Office Information</h3>
+				<p>Children's Health Partners is located in southwest Naperville, easily accessible to Plainfield, Bolingbrook, Aurora and Oswego. We are located in the Edward Healthcare Center building on the northwest corner of 95th Street and Book Road.</p>
+				<hr />
+		
+				<div class="row">
+					<div class="span8">
+				    	<div id="map" class="google-map" style="border: 1px solid #999"></div>
+					</div>
+					<div class="span4">
+				        <h4>Children's Health Partners, SC</h4>
+						<address>
+				        	2007 95th Street, Lower Level, Suite A<br/>
+				        	Naperville, IL 60564<br/>
+				        	Phone: 630-848-1700<br/>
+				        	Fax: 630-848-1718<br/>
+						</address>
+
+				      	<h4>Office Hours</h4>
+				      	<table class="table" summary="Office Hours">
+				        	<tbody>
+				          <tr>
+				            <td>Monday:</td>
+				            <td>8:30 am - 5:00 pm</td>
+				          </tr>
+				          <tr class="even">
+				            <td>Tuesday*:</td>
+				            <td>8:30 am - 8:00 pm</td>
+				          </tr>
+				          <tr>
+				            <td>Wednesday:</td>
+				            <td>8:30 am - 4:00 pm</td>
+				          </tr>
+				          <tr class="even">
+				            <td>Thursday*:</td>
+				            <td>8:30 am - 8:00 pm</td>
+				          </tr>
+				          <tr>
+				            <td>Friday:</td>
+				            <td>8:30 am - 4:00 pm</td>
+				          </tr>
+				          <tr class="even">
+				            <td>Saturday:</td>
+				            <td>8:30 am - 11:00 am (Nurse calls and acutely ill visits only)</td>
+				          </tr>
+				        	</tbody>
+				      	</table>
+				      	<p><small>*Although we are open until 8:00 pm on Tuesdays and Thursdays, our  late appointments are reserved primarily for well visits.  We reserve ample time for sick visits before 4 pm daily.  Please call early in the day when possible if your child needs to be seen so we can accommodate you.</small></p>
+
+						<hr />
+				      	<h4>After Hours Physician</h4>
+				      	<p>One of the Children's Health Partners pediatricians is always accessible after the office closes through our paging system if your child has an urgent medical issue.</p>
+				      	<p>
+				        To access the paging system:<br/><br/>
+				        Call our main number <strong>(630-848-1700)</strong><br/><br/>
+				        Follow the directions to page the pediatrician on call.
+				        Leave a brief message, clearly stating and spelling the patient's first and last name and phone number with area code.
+				        If you have not heard back from the physician within one hour, please page again.  Occasionally, the page does not go through, the message is not clear, or the parent forgets to leave a telephone number.
+				      	</p>
+					</div>
+				</div>
+			</section>
+		</div>
+	</div>
+	<script>LOADER.include('/templates/footer.html');</script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    //<![CDATA[
+      	var map = null;
+      	var geocoder = null;
+      	var marker = null;
+
+      	function loadMap() {
+		  	var latlng = new google.maps.LatLng(41.710, -88.1974148);
+		  	var mapOptions = {
+		    	zoom: 14,
+		    	center: latlng,
+
+		    	mapTypeId: google.maps.MapTypeId.ROADMAP
+		  	}
+		  	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+		
+			var marker = new google.maps.Marker({
+		      	position: latlng,
+		      	map: map,
+		      	title:"Children\'s Health Partners"
+		  	});
+		
+			var infowindow = new google.maps.InfoWindow();
+			infowindow.setContent("<div style=\"color: #000;\"><strong>Children\'s Health Partners</strong><br/>2007 95th Street Lower Level, Suite A<br/> Naperville, IL 60564</div>");
+			infowindow.open(map, marker);
+			
+      	}
+
+      	jQuery(function() { 
+	  		var script = document.createElement("script");
+	  		script.type = "text/javascript";
+	  		script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyABEcyJSAWzQgxFvZx-eQnXt-PqgZDl0eg&sensor=true&callback=loadMap";
+	  		document.body.appendChild(script);
+      	});
+
+    // ]]>
+    </script>
+
+  </body>
+</html>
