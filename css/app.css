@@ -229,19 +229,18 @@ div .fb_reset {
 
 .featured-content img, .header-content img {
 	border-radius: 6px;
-	box-shadow: 3px 3px 3px #888888;
+	box-shadow: 2px 2px 2px #888888;
 }
 
 .featured-content .text-holder {
 	height: 79px;
-	padding: 20px 0 0 0;
+	padding: 15px 0 0 0;
 	background: url(/img/featured-text.png) 0 0 repeat-x;
 	position: absolute;
-	bottom: 0;
+	bottom: 5px;
 	left: 0;
 	z-index: 5;
 	width: 100%;
-	border-radius: 6px;
 }
 
 .featured-content .text-holder  h3 {
