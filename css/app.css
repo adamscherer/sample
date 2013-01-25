@@ -93,7 +93,8 @@ header {
 
 #social {
     margin: 10px;
-}    
+}
+
 div .plusone, .twitter, .fb-like {
     font-size: 1px;
     display: inline-block;
@@ -282,7 +283,10 @@ div .fb_reset {
 .profile-photo {
 	float: right;
 	margin: 10px 0 10px 20px;
-	border: 6px solid #EBEBEB;
+	border: 1px solid #ddd;
+	box-shadow: 0 0 5px #ddd;
+	padding: 5px;
+	background: #fff;
 }
 
 .google-map {
