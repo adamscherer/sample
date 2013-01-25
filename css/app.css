@@ -45,7 +45,8 @@ a, a:hover {
 }
 
 hr {
-	border-bottom: 1px dashed #AAA;
+	/*border-bottom: 1px dashed #AAA;*/
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAAACCAYAAACXHrW5AAAABHNCS…e6UbZBt0myktPi3BUAAAAA8B9h0IXGmtCI142yc+bPrA9SsV5iEaGw/wAAAABJRU5ErkJggg==) 50% 100% no-repeat;
 }
 
 section {
