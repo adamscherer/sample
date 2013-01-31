@@ -128,7 +128,7 @@ div .fb_reset {
 	padding: 1px;
 	border-radius: 7px;
 	background: #D7D7D7;
-	background: url(/img/menu_border.svg) 0 0 repeat-x;
+	background: url("/img/menu_border.svg") 0 0 repeat-x;
 	background-size: 100% 100%;
 	float: right;
 }
@@ -141,7 +141,7 @@ div .fb_reset {
 	border: 1px solid white;
 	border-radius: 6px;
 	background: #D7D7D7;
-	background: url(/img/menu_bg.svg) 0 0 repeat-x;
+	background: url("/img/menu_bg.svg") 0 0 repeat-x;
 	background-size: 100% 100%;
 	float: left;
 }
