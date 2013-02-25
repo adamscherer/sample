@@ -12,9 +12,13 @@ active: "office"
 		
 				<div class="row">
 					<div class="span8">
-				    	<div id="map" class="google-map" style="border: 1px solid #999"></div>
+				    	<div id="map" class="google-map" style="border: 1px solid #999">
+				    		
+				
+				    	</div>
 					</div>
 					<div class="span4">
+						<div class="well">
 				        <h4>Children's Health Partners, SC</h4>
 						<address>
 				        	2007 95th Street, Lower Level, Suite A<br/>
@@ -24,7 +28,7 @@ active: "office"
 						</address>
 
 				      	<h4>Office Hours</h4>
-				      	<table class="table" summary="Office Hours">
+				      	<table class="table table-striped" summary="Office Hours">
 				        	<tbody>
 				          <tr>
 				            <td>Monday:</td>
@@ -64,44 +68,31 @@ active: "office"
 				        Leave a brief message, clearly stating and spelling the patient's first and last name and phone number with area code.
 				        If you have not heard back from the physician within one hour, please page again.  Occasionally, the page does not go through, the message is not clear, or the parent forgets to leave a telephone number.
 				      	</p>
+						</div>
 					</div>
 				</div>
 			</section>
 		</div>
-    <script type="text/javascript">
-    //<![CDATA[
-      	var map = null;
-      	var geocoder = null;
-      	var marker = null;
-
-      	function loadMap() {
-		  	var latlng = new google.maps.LatLng(41.710, -88.1974148);
-		  	var mapOptions = {
-		    	zoom: 14,
-		    	center: latlng,
-
-		    	mapTypeId: google.maps.MapTypeId.ROADMAP
-		  	}
-		  	var map = new google.maps.Map(document.getElementById("map"), mapOptions);
-		
+	    <script type="text/javascript"
+	      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBOalw0stRNPJsnlm1IJqmmnn_LNEtxAJc&sensor=true">
+	    </script>
+	    <script type="text/javascript">
+	        var mapOptions = {
+	          center: new google.maps.LatLng(41.710, -88.1974148),
+	          zoom: 14,
+	          mapTypeId: google.maps.MapTypeId.ROADMAP
+	        };
+	        var map = new google.maps.Map(document.getElementById("map"),
+	            mapOptions);
+	
 			var marker = new google.maps.Marker({
-		      	position: latlng,
-		      	map: map,
-		      	title:"Children\'s Health Partners"
-		  	});
-		
-			var infowindow = new google.maps.InfoWindow();
-			infowindow.setContent("<div style=\"color: #000;\"><strong>Children\'s Health Partners</strong><br/>2007 95th Street Lower Level, Suite A<br/> Naperville, IL 60564</div>");
+				position: new google.maps.LatLng(41.710, -88.1974148),
+			    map: map,
+			    title:"Children\'s Health Partners"
+			});
+
+			var infowindow = new google.maps.InfoWindow({
+				content: "<div style=\"color: #000;\"><strong>Children\'s Health Partners</strong><br/>2007 95th Street Lower Level, Suite A<br/> Naperville, IL 60564</div>"
+			});
 			infowindow.open(map, marker);
-			
-      	}
-
-      	jQuery(function() { 
-	  		var script = document.createElement("script");
-	  		script.type = "text/javascript";
-	  		script.src = "http://maps.googleapis.com/maps/api/js?key=AIzaSyABEcyJSAWzQgxFvZx-eQnXt-PqgZDl0eg&sensor=true&callback=loadMap";
-	  		document.body.appendChild(script);
-      	});
-
-    // ]]>
-    </script>
+	    </script>
