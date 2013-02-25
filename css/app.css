@@ -56,7 +56,6 @@ a, a:hover {
 hr {
 	border-top: 1px solid #ccc;
 	border-bottom: none;
-	/*background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA8AAAAACCAYAAACXHrW5AAAABHNCS…e6UbZBt0myktPi3BUAAAAA8B9h0IXGmtCI142yc+bPrA9SsV5iEaGw/wAAAABJRU5ErkJggg==) 50% 100% no-repeat;*/
 }
 
 section {
@@ -442,4 +441,34 @@ div .fb_reset {
 }
 #footer {
 	position: relative;
+}
+
+
+@media (max-width: 979px){
+	#logo {
+		top: 2px;
+		left: -5px;
+	}
+	#logo img {
+		width: 210px;
+	}
+}
+
+@media (max-width: 767px) {
+  	body {
+    	padding-right: 0;
+    	padding-left: 0;
+  	}
+	.container {
+		padding: 0 20px;
+	}
+	#logo {
+		position: static;
+		display: block;
+		overflow: hidden;
+	}
+	#logo img {
+		width: 235px;
+		float: right;
+	}
 }
