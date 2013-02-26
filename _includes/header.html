@@ -14,26 +14,13 @@
 		</div>
 		</div>
 	</div>
-	<nav id="menu">
-		<ul class="menu menu-main">
-			<li class="level1 {% if page.active == 'doctors' %}active{% endif %}">
-				<a href="/doctors" class="level1 {% if page.active == 'doctors' %}active{% endif %}"><span>Doctors</span></a>
-			</li>
-			<li class="level1 {% if page.active == 'new-patients' %}active{% endif %}">
-				<a href="/new-patients" class="level1 {% if page.active == 'new-patients' %}active{% endif %}"><span>New Patients</span></a>
-			</li>
-			<li class="level1 {% if page.active == 'health' %}active{% endif %}">
-				<a href="/health-information" class="level1 {% if page.active == 'health' %}active{% endif %}"><span>Health Info</span></a>
-			</li>
-			<li class="level1 {% if page.active == 'office' %}active{% endif %}">
-				<a href="/office-information" class="level1 {% if page.active == 'office' %}active{% endif %}"><span>Office Info</span></a>
-			</li>
-			<li class="level1 {% if page.active == 'schedule' %}active{% endif %}">
-				<a href="/scheduling" class="level1 {% if page.active == 'schedule' %}active{% endif %}"><span>Scheduling</span></a>
-			</li>
-			<li class="level1 {% if page.active == 'billing' %}active{% endif %}">
-				<a href="/forms-billing" class="level1 {% if page.active == 'billing' %}active{% endif %}"><span>Forms & Billing</span></a>
-			</li>
-		</ul>
+
+	<nav id="menu" class="btn-group">
+		<a href="/doctors" class="btn {% if page.active == 'doctors' %}active{% endif %}">Doctors</a>
+		<a href="/new-patients" class="btn {% if page.active == 'new-patients' %}active{% endif %}">New Patients</a>
+		<a href="/health-information" class="btn {% if page.active == 'health' %}active{% endif %}">Health Info</a>
+		<a href="/office-information" class="btn {% if page.active == 'office' %}active{% endif %}">Office Info</a>
+		<a href="/scheduling" class="btn {% if page.active == 'schedule' %}active{% endif %}">Scheduling</a>
+		<a href="/forms-billing" class="btn {% if page.active == 'billing' %}active{% endif %}">Forms & Billing</a>
 	</nav>
 </header>

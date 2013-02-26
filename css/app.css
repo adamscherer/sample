@@ -177,137 +177,19 @@ div .fb_reset {
 	color: #325B7B;
 }
 
-.menu, .menu ul {
-	list-style:none;
-	margin:0;
-	padding:0;
+#menu {
+	float: right;
+}
+
+.btn-group a.btn {
+	padding: 9px 18px;
+	text-shadow: 0 1px 0 #FFF;
+	font-size: 15px;
 }
 
 ::-moz-selection,::selection {
 	background:#39f;
 	color:#fff;
-}
-
-#menu {
-	padding: 1px;
-	border-radius: 7px;
-	background: #D7D7D7;
-	background: url(/img/menu_border.svg) 0 0 repeat-x;
-	background-size: 100% 100%;
-	float: right;
-}
-
-.menu-main, .menu-main li, .menu-main li a {
-	float:left;
-}
-
-.menu-main {
-	border: 1px solid white;
-	border-radius: 6px;
-	background: #D7D7D7;
-	background: url(/img/menu_bg.svg) 0 0 repeat-x;
-	background-size: 100% 100%;
-	float: left;
-}
-
-.menu-main a.level1 {
-	color:#444;
-}
-
-.menu-main li.level1 {
-	margin:-1px 0;
-}
-
-.menu-main a.level1>span {
-	height:38px;
-	line-height:38px;
-	text-shadow:0 1px 0 #FFF;
-	font-size:15px;
-	padding:0 20px;
-}
-
-.menu-main li.level1:hover .level1 {
-	margin-top:-1px;
-	border-top:1px solid #d2d3d4;
-	border-left:1px solid #DCDDDE;
-	box-shadow:0 1px 2px rgba(0,0,0,0.07) inset;
-	color:#000;
-}
-
-.menu-main li.level1:active .level1 {
-	background:#F5F6F7;
-}
-
-.menu-main li.active.level1 .level1 {
-	margin-top:-1px;
-	border-top:1px solid #d2d3d4;
-	border-left:1px solid #DCDDDE;
-	background: #FEFEFE;
-	background: -moz-linear-gradient(top, #F7F8F9 0%, #FBFCFD 15%, #FEFEFE 100%);
-	background: -webkit-linear-gradient(top, #F7F8F9 0%, #FBFCFD 15%, #FEFEFE 100%);
-	background: -o-linear-gradient(top, #F7F8F9 0%, #FBFCFD 15%, #FEFEFE 100%);
-	box-shadow:0 1px 2px rgba(0,0,0,0.05) inset;
-	color:#000;
-}
-
-.menu-main li.level1:hover + li,.menu-main li.active.level1+li {
-	margin-top:-2px;
-	padding-top:1px;
-	border-left:1px solid #DCDDDE;
-}
-
-.menu-main li.level1:hover + li.active .level1 {
-	margin-top:-1px;
-	padding-top:0;
-	border-left:1px solid #DCDDDE;
-}
-
-.menu-main li.level1:first-child,.menu-main li.level1:first-child>.level1 {
-	border-top-left-radius:6px;
-	border-bottom-left-radius:6px;
-}
-
-.menu-main li.level1:first-child .level1>span {
-	padding:0 20px;
-}
-
-.menu-main li.level1:first-child .level1 {
-	border-left:1px solid #d2d3d4;
-}
-
-.menu-main li.level1:hover:first-child .level1 > span,.menu-main li.active.level1:first-child .level1>span {
-	padding-left:20px;
-}
-
-.menu-main li.level1:last-child,.menu-main li.level1:last-child
-.level1 {
-	border-top-right-radius:6px;
-	border-bottom-right-radius:6px;
-}
-
-.menu-main li.level1:last-child {
-	margin-right:-1px;
-}
-
-.menu-main li.level1:hover,.menu-main li.active.level1,.menu-main li.level1:hover + li .level1,.menu-main li.active.level1 + li .level1 {
-	border-left:1px solid #FFF;
-}
-
-.menu-main li.level1:hover .level1>span,.menu-main li.active.level1 .level1>span,.menu-main li.level1:hover + li .level1 > span,.menu-main li.active.level1 + li .level1>span {
-	padding-left:18px;
-}
-
-.menu-main li.level1:hover+li.active,.menu-main li.active.level1 + li:hover .level1 {
-	border-left:none;
-}
-
-.menu-main li.level1:first-child {
-	border-left: none;
-	margin-left: -2px;
-}
-
-.menu-main li.level1:hover + li.active .level1>span,.menu-main li.active.level1 + li:hover .level1>span {
-	padding-left:19px;
 }
 
 #block-footer {
@@ -328,7 +210,7 @@ div .fb_reset {
 }
 
 .featured-content .text-holder {
-	height: 85px;
+	height: 50px;
 	padding: 15px 0 0 0;
 	background: url(/img/featured-text.png) 0 0 repeat-x;
 	position: absolute;
@@ -340,15 +222,17 @@ div .fb_reset {
 
 .featured-content .text-holder  h3 {
 	font-size: 22px;
-	margin: 0 0 3px 15px;
+	margin: 0 10px 3px 15px;
 	color: #fff;
 	line-height: 26px;
+	float: left;
 }
 
 .featured-content .text-holder  p {
 	font-size: 14px;
 	padding: 0 15px 10px 15px;
 	color: #61D3DA;
+	margin: 0 0 0 0;
 }
 
 .contact-phone label {
@@ -395,7 +279,7 @@ div .fb_reset {
 
 .profile-photo {
 	float: right;
-	margin: 10px 0 10px 20px;
+	margin: 0px 0 5px 20px;
 	border: 1px solid #ddd;
 	box-shadow: 0 0 5px #ddd;
 	padding: 5px;
@@ -443,7 +327,6 @@ div .fb_reset {
 	position: relative;
 }
 
-
 @media (max-width: 979px){
 	#logo {
 		top: 2px;
@@ -471,4 +354,5 @@ div .fb_reset {
 		width: 235px;
 		float: right;
 	}
+	
 }
