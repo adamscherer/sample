@@ -1,9 +1,3 @@
-/*
-#B7DAE4 - light blue;
-#54A8C0 - 
-#8E9CB7 - dark blue
-#FEFEFE - white
-*/
 html, body {
     background: #28292A;
 }
@@ -88,10 +82,6 @@ i.icon-phone {
 }
 
 .well {
-	/*
-	border: 1px solid #87b4d2;
-	background: #d2ebfa;
-	*/
 	border: 1px solid #D2D3D4;
 	background: #FBFCFD;
 	box-shadow: inset 0 0 0 1px #fff;
@@ -167,8 +157,9 @@ div .fb_reset {
 	text-align: right;
 }
 
-#toolbar span {
+#toolbar span, #toolbar address {
 	display: inline-block;
+	margin-bottom: 0;
 	
 }
 #toolbar span.phone {
@@ -182,7 +173,7 @@ div .fb_reset {
 }
 
 #menu-phone {
-	width: 90%;
+	width: 85%;
 }
 
 .btn-group a.btn {
