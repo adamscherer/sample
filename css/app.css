@@ -181,6 +181,10 @@ div .fb_reset {
 	float: right;
 }
 
+#menu-phone {
+	width: 90%;
+}
+
 .btn-group a.btn {
 	padding: 9px 18px;
 	text-shadow: 0 1px 0 #FFF;

@@ -15,7 +15,16 @@
 		</div>
 	</div>
 
-	<nav id="menu" class="btn-group">
+	<nav id="menu" class="btn-group hidden-phone">
+		<a href="/doctors" class="btn {% if page.active == 'doctors' %}active{% endif %}">Doctors</a>
+		<a href="/new-patients" class="btn {% if page.active == 'new-patients' %}active{% endif %}">New Patients</a>
+		<a href="/health-information" class="btn {% if page.active == 'health' %}active{% endif %}">Health Info</a>
+		<a href="/office-information" class="btn {% if page.active == 'office' %}active{% endif %}">Office Info</a>
+		<a href="/scheduling" class="btn {% if page.active == 'schedule' %}active{% endif %}">Scheduling</a>
+		<a href="/forms-billing" class="btn {% if page.active == 'billing' %}active{% endif %}">Forms & Billing</a>
+	</nav>
+	
+	<nav id="menu-phone" class="btn-group btn-group-vertical visible-phone">
 		<a href="/doctors" class="btn {% if page.active == 'doctors' %}active{% endif %}">Doctors</a>
 		<a href="/new-patients" class="btn {% if page.active == 'new-patients' %}active{% endif %}">New Patients</a>
 		<a href="/health-information" class="btn {% if page.active == 'health' %}active{% endif %}">Health Info</a>
